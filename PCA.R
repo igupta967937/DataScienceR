@@ -2,7 +2,7 @@
 
 
 p1 <- princomp(USArrests, cor = TRUE)  ## using correlation matrix
-## p1 <- princomp(USArrests)  ## using covariance matrix
+
 
 summary(p1)
 loadings(p1)
