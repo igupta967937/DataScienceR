@@ -1,11 +1,5 @@
-There are three ways to perform PCA in R: princomp() , prcomp() and  pca() in labdsv library . Essentially, they compute the same values (technically, princomp() and labdsv package computes an eigen analysis and prcomp() computes a singular value decomposition.).
-
-The prcomp() function is a numerically stable routine that returns a “prcomp object” that contains the square-root of the eigenvalues (“sdev”), the eigenvectors (“rotation”), and the scores. And so the preferred method is prcomp(). 
-
-The princomp() function is slightly less stable, but has more features. It returns a “princomp object” that contains the square-root of the eigenvalues (“sdev”), the eigenvectors (“loadings”),  the means for each variable (“center”) and the scores (“scores”), as well as some other things. Typing summary(princomp) or summary(prcomp) will return the percent of variation explained. 
 
 
-## princomp()
 
 p1 <- princomp(USArrests, cor = TRUE)  ## using correlation matrix
 ## p1 <- princomp(USArrests)  ## using covariance matrix
