@@ -1,7 +1,7 @@
 
 
 
-p1 <- princomp(USArrests, cor = TRUE)  ## using correlation 
+p1 <- princomp(USArrests, cor = TRUE)  ## using correlatio
 
 
 summary(p1)
